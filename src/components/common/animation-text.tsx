@@ -4,15 +4,15 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const texts = [
+  "Raquel is a real Fruitful Guide",
   "Colin is a real Fruitful Guide",
   "Maya is a real Fruitful Member",
-  "Andrew is a real Fruitful Guide",
-  "Raquel is a real Fruitful Guide",
   "Daniela is a real Fruitful Member",
   "Durriya is a real Fruitful Guide",
   "Steph is a real Fruitful Member",
   "Sharise is a real Fruitful Member",
   "Rebecca is a real Fruitful Member",
+  "Andrew is a real Fruitful Guide",
   "Misha is a real Fruitful Member",
 ];
 
@@ -29,12 +29,12 @@ export default function AnimationText() {
   };
 
   useEffect(() => {
-    const timer = setTimeout(next, 1000); // Durée d'affichage du texte
+    const timer = setTimeout(next, 900); // Durée d'affichage du texte
     return () => clearTimeout(timer);
   }, [index]);
 
   return (
-    <div className="text-white text-2xl h-auto overflow-hidden ">
+    <div className="text-white text-[27px] h-auto overflow-hidden ">
       <AnimatePresence mode="wait">
         {show && (
           <motion.div
