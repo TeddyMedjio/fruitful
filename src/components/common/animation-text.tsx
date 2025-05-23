@@ -34,7 +34,7 @@ export default function AnimationText() {
   }, [index]);
 
   return (
-    <div className="text-white text-[27px] h-auto overflow-hidden ">
+    <div className="text-white text-xl md:text-[27px] lg:text-[24px] h-auto overflow-hidden ">
       <AnimatePresence mode="wait">
         {show && (
           <motion.div

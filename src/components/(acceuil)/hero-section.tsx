@@ -19,15 +19,15 @@ export default function HeroSection() {
             Find ny Guide
           </Link>
         </div>
-        <div className="flex items-center justify-start h-full">
-          <div className="flex flex-col gap-7">
-            <h1 className="text-[87px] text-white max-w-[500px] leading-[75px] ">
-              Finances figured out for you
+        <div className="flex pt-72 lg:pt-0 items-center md:justify-baseline h-full">
+          <div className="flex flex-col gap-2 md:gap-6 md:mt-24 lg:mt-0">
+            <h1 className=" text-5xl leading-[45px] md:text-[90px] lg:text-[74px] text-white md:max-w-[620px] md:leading-[80px] lg:leading-[65px] ">
+              No more stress, just progress.
             </h1>
             <AnimationText />
             <Link
               href="/"
-              className="text-lg py-[14px] w-fit px-18 rounded-3xl bg-white text-green-900 hover:bg-green-900 hover:text-white transition-all duration-300 ease-in-out"
+              className="hidden lg:block text-lg py-[14px] w-fit px-14 rounded-3xl bg-white text-green-900 hover:bg-green-900 hover:text-white transition-all duration-300 ease-in-out"
             >
               Get started
             </Link>
@@ -47,9 +47,18 @@ export default function HeroSection() {
         muted
         loop={true}
         autoPlay={true}
-        className="absolute top-0 object-cover h-full w-full -z-10"
+        className="hidden md:block absolute object-cover h-full w-full -z-10"
       >
-        <source src="/hero-desktop.mp4" type="video/mp4" />
+        <source src="/desktop-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video
+        muted
+        loop={true}
+        autoPlay={true}
+        className="md:hidden absolute object-cover h-full w-full -z-10"
+      >
+        <source src="/hero-mobile.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
