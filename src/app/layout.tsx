@@ -4,8 +4,11 @@ import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "@/components/common/navbar";
 
-const ppnuemontreal = localFont({
+const ppnuemontrealMedium = localFont({
   src: "../app/fonts/ppneuemontreal-medium.woff",
+});
+const ppnuemontrealBold = localFont({
+  src: "../app/fonts/ppneuemontreal-bold.woff",
 });
 
 export const metadata: Metadata = {
@@ -40,7 +43,7 @@ export default function RootLayout({
       <meta content="summary_large_image" name="twitter:card" />
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <body
-        className={`${ppnuemontreal.className} antialiased selection:bg-green-900 selection:text-green-200`}
+        className={`${ppnuemontrealMedium.className} antialiased selection:bg-green-900 selection:text-green-200`}
       >
         <Navbar />
         {children}

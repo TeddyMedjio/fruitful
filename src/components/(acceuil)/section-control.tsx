@@ -3,6 +3,7 @@ import Container from "../common/container";
 import { ArrowRight, ListTodo, MessagesSquare } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { ppnuemontrealbold } from "@/app/font";
 
 export default function SectionControl() {
   return (
@@ -20,7 +21,9 @@ export default function SectionControl() {
             <span className="inline-flex gap-2 py-3 px-6 bg-white rounded-full text-[12px] font-semibold">
               <MessagesSquare size={20} /> Advice
             </span>
-            <p className="text-[28px] font-bold leading-[30px]">
+            <p
+              className={`text-[26px] leading-[30px] ${ppnuemontrealbold.className}`}
+            >
               Smart, supportive Guides dedicated to you, your finances, and your
               goals.
             </p>
@@ -47,10 +50,12 @@ export default function SectionControl() {
             <span className="inline-flex gap-2 py-3 px-6 bg-white rounded-full text-[12px] font-semibold">
               <ListTodo size={20} /> Action
             </span>
-            <p className="text-[28px] font-bold leading-[30px]">
+            <p
+              className={`text-[26px] leading-[30px] ${ppnuemontrealbold.className}`}
+            >
               A built-for-you money system that puts your finances on autopilot.
             </p>
-            <div className="relative size-[13em] md:size-[224px] mx-auto">
+            <div className="relative size-[13em] md:size-[274px] mx-auto">
               <Image
                 src="https://cdn.prod.website-files.com/659f15a242e58eb40c8cf14b/681915f33f71a3490a196cf8_info-card-flow.svg"
                 fill={true}
