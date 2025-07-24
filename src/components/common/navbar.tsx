@@ -1,6 +1,5 @@
 import FruitfulLogo from "@/components/icons/fruitful_logo";
 import Link from "next/link";
-import React from "react";
 import { Navigation } from "./navigation";
 import { ArrowRight, MenuIcon } from "lucide-react";
 

@@ -3,14 +3,14 @@ import Container from "../common/container";
 import { ArrowRight, ListTodo, MessagesSquare } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { ppnuemontrealbold } from "@/app/font";
+import { ppnuemontreal } from "@/app/font";
 
 export default function SectionControl() {
   return (
     <Container>
       <div className="grid place-items-center w-full">
         {/* animation text */}
-        <h2 className="text-[40px] leading-[44px] max-w-[700px] text-center my-40">
+        <h2 className="text-[40px] lg:text-[48px] leading-[34px] md:leading-[54px] max-w-[850px] text-center mt-20 mb-40">
           Take control of your finances with 1-on-1 advice and a tailor-made
           money system that gets you organized, optimized, and on track in 30
           days.
@@ -22,7 +22,7 @@ export default function SectionControl() {
               <MessagesSquare size={20} /> Advice
             </span>
             <p
-              className={`text-[26px] leading-[30px] ${ppnuemontrealbold.className}`}
+              className={`text-[26px] leading-[30px] ${ppnuemontreal.className} font-bold`}
             >
               Smart, supportive Guides dedicated to you, your finances, and your
               goals.
@@ -51,7 +51,7 @@ export default function SectionControl() {
               <ListTodo size={20} /> Action
             </span>
             <p
-              className={`text-[26px] leading-[30px] ${ppnuemontrealbold.className}`}
+              className={`text-[26px] leading-[30px] ${ppnuemontreal.className} font-bold`}
             >
               A built-for-you money system that puts your finances on autopilot.
             </p>

@@ -1,7 +1,6 @@
-import Image from "next/image";
-import { ppnuemontrealbold } from "./font";
 import HeroSection from "@/components/(acceuil)/hero-section";
 import SectionControl from "@/components/(acceuil)/section-control";
+import SectionGuide from "@/components/(acceuil)/section_guide";
 
 export default function Home() {
   return (
@@ -9,6 +8,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <SectionControl />
+        <SectionGuide />
       </main>
     </>
   );

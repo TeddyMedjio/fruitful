@@ -1,15 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import localFont from "next/font/local";
 import Navbar from "@/components/common/navbar";
-
-const ppnuemontrealMedium = localFont({
-  src: "../app/fonts/ppneuemontreal-medium.woff",
-});
-const ppnuemontrealBold = localFont({
-  src: "../app/fonts/ppneuemontreal-bold.woff",
-});
+import { ppnuemontreal } from "./font";
 
 export const metadata: Metadata = {
   title: "Fruitful - Finances Figured Out for You, Get on Track in 30 Days",
@@ -43,7 +35,7 @@ export default function RootLayout({
       <meta content="summary_large_image" name="twitter:card" />
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <body
-        className={`${ppnuemontrealMedium.className} antialiased selection:bg-green-900 selection:text-green-200`}
+        className={`${ppnuemontreal.className} font-medium antialiased selection:bg-green-900 selection:text-green-200`}
       >
         <Navbar />
         {children}
