@@ -8,7 +8,7 @@ interface PropsCards {
 
 export default function CardPersonal({ image, name, video }: PropsCards) {
   return (
-    <div className=" h-[142px] max-w-[109px] lg:h-[234px] w-full lg:max-w-[180px] bg-green-200/50 rounded-2xl relative overflow-hidden cursor-pointer">
+    <div className=" h-full w-full bg-rose-200 rounded-2xl relative overflow-hidden cursor-pointer">
       <Image
         src={image}
         alt="picture naima"

@@ -1,3 +1,4 @@
+import { div } from "framer-motion/client";
 import CardPersonal from "../common/card_personal";
 import Container from "../common/container";
 
@@ -51,17 +52,19 @@ export default function SectionGuide() {
           </div>
 
           {/* images */}
-          <div className="flex-1/2">
-            <div className="flex items-center justify-center flex-wrap gap-2 nth-2:rotate-12">
-              {persons.map((person, idx) => (
+          <div className="flex-1/2 flex items-center justify-center flex-wrap gap-2 ">
+            {persons.map((person, idx) => (
+              <div
+                key={idx}
+                className="h-[142px] max-w-[109px] lg:h-[234px] w-full lg:max-w-[180px] lg:nth-2:rotate-12 lg:nth-2:scale-120 lg:nth-2:z-20"
+              >
                 <CardPersonal
-                  key={idx}
                   image={person.image}
                   name={person.name}
                   video={person.source}
                 />
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </Container>
