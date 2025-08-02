@@ -7,26 +7,21 @@ interface PropsCards {
   infos?: boolean;
 }
 
-export default function CardPersonal({
-  image,
-  name,
-  video,
-  infos,
-}: PropsCards) {
+export default function CardMember({ image, name, video, infos }: PropsCards) {
   return (
     <div className=" h-full w-full bg-orange-100 rounded-2xl relative overflow-hidden cursor-pointer">
       <Image
         src={image}
         alt="picture naima"
         fill={true}
-        className="absolute w-full h-full object-cover z-10 hover:hidden"
+        className="absolute w-full h-full object-cover z-10 hidden lg:block lg:hover:hidden"
       />
       <video
         loop
         muted
         playsInline={true}
         autoPlay
-        className="absolute w-full h-full object-cover z-10 opacity-0 hover:opacity-100"
+        className="absolute w-full h-full object-cover z-10 lg:opacity-0 lg:hover:opacity-100"
       >
         <source src={video} type="video/mp4" />
       </video>

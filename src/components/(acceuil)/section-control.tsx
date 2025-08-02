@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import Container from "../common/container";
 import { ArrowRight, ListTodo, MessagesSquare } from "lucide-react";
 import Image from "next/image";

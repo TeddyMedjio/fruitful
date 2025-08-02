@@ -1,4 +1,4 @@
-import { div } from "framer-motion/client";
+"use client";
 import CardPersonal from "../common/card_personal";
 import Container from "../common/container";
 
@@ -59,6 +59,7 @@ export default function SectionGuide() {
                 className="h-[142px] max-w-[109px] lg:h-[234px] w-full lg:max-w-[180px] lg:nth-2:rotate-12 lg:nth-2:scale-120 lg:nth-2:z-20"
               >
                 <CardPersonal
+                  infos
                   image={person.image}
                   name={person.name}
                   video={person.source}
