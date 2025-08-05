@@ -3,6 +3,7 @@ import Link from "next/link";
 import Container from "../common/container";
 import { ButtonInitial } from "../common/button-initial";
 import ImageDialog from "./DialogPersonal";
+import { cn } from "@/lib/utils";
 
 const images = [
   {
@@ -80,12 +81,12 @@ export default function Professionals() {
         </div>
 
         {/* images */}
-        <div className="grid place-items-center space-y-10 w-full mt-10">
-          <div className="flex items-center justify-center -space-x-4 w-full">
+        <div className="grid place-items-center w-full lg:max-w-[950px] mt-10">
+          <div className="flex items-center justify-center -space-x-10 w-full">
             {images.map((img, index) => (
               <div
                 key={img.id}
-                className="h-[142px] max-w-[109px] md:h-[281px] w-full md:max-w-[211px] drop-shadow-lg drop-shadow-black/20 transition duration-300 ease-in-out nth hover:nth-[n]:-rotate-5 hover:nth-[n]:scale-110 hover:nth-[n]:z-20 nth-[1]:-rotate-2 nth-[2]:rotate-3 nth-[3]:rotate-3 nth-[4]:rotate-3 nth-[5]:rotate-3 nth-[6]:rotate-3"
+                className="h-[142px] max-w-[109px] md:h-[281px] w-full md:max-w-[211px] drop-shadow-lg drop-shadow-black/20 transition duration-300 ease-in-out nth hover:nth-[n]:-rotate-5 hover:nth-[n]:scale-110 hover:nth-[n]:z-20 nth-[1]:-rotate-2 nth-[2]:rotate-2 nth-[3]:-rotate-2 nth-[4]:rotate-1 nth-[5]:-rotate-3 nth-[6]:rotate-3"
               >
                 <ImageDialog
                   images={images}
@@ -95,7 +96,11 @@ export default function Professionals() {
               </div>
             ))}
           </div>
-          <ButtonInitial variant="default" asChild>
+          <ButtonInitial
+            variant="default"
+            asChild
+            className={cn("mt-10 md:mt-0")}
+          >
             <Link href="/">Chooce your Guide</Link>
           </ButtonInitial>
         </div>

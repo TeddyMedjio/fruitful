@@ -58,7 +58,7 @@ export default function ImageDialog({
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <div
-          className=" h-full w-full bg-orange-100 rounded-2xl relative overflow-hidden cursor-pointer"
+          className="h-[180px] w-[80px] md:h-[220px] md:w-[165px] bg-orange-100 rounded-xl relative overflow-hidden cursor-pointer"
           onClick={openModal}
         >
           <Image
